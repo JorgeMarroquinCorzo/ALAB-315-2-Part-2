@@ -1,7 +1,7 @@
 # simple_calculator.py
 
 def main():
-    # 1. Ask the user for two numbers
+    #  Ask the user for two numbers
     num1_input = input("Enter the first number: ")
     num2_input = input("Enter the second number: ")
 
@@ -15,10 +15,10 @@ def main():
     num1 = float(num1_input)
     num2 = float(num2_input)
 
-    # 2. Ask the user to choose an operation
+    #  Ask the user to choose an operation
     operation = input("Choose an operation (+, -, *, /): ")
 
-    # 3. Perform the calculation using if-elif-else
+    #  Perform the calculation using if-elif-else
     if operation == "+":
         result = num1 + num2
     elif operation == "-":
@@ -41,7 +41,7 @@ def main():
     display_num2 = int(num2) if num2.is_integer() else num2
     display_result = int(result) if isinstance(result, float) and result.is_integer() else result
 
-    # 4. Print the result in a user-friendly way
+    #  Print the result in a user-friendly way
     print(f"{display_num1} {operation} {display_num2} = {display_result}")
 
 
